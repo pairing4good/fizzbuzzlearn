@@ -31,4 +31,31 @@ public class FizzBuzzCalculatorTest {
 
         Assert.assertEquals("4", actual);
     }
+
+    @Test
+    public void Calculate_ForThreeItReturnsFizz() {
+        FizzBuzzCalculator calculator = new FizzBuzzCalculator();
+
+        String actual = calculator.Calculate(3);
+
+        Assert.assertEquals("fizz", actual);
+    }
+
+    @Test
+    public void Calculate_ForNineItReturnsFizz() {
+        FizzBuzzCalculator calculator = new FizzBuzzCalculator();
+
+        String actual = calculator.Calculate(9);
+
+        Assert.assertEquals("fizz", actual);
+    }
+
+    @Test
+    public void Calculate_ForOneHundredTwentyThreeItReturnsFizz() {
+        FizzBuzzCalculator calculator = new FizzBuzzCalculator();
+
+        String actual = calculator.Calculate(123);
+
+        Assert.assertEquals("fizz", actual);
+    }
 }
